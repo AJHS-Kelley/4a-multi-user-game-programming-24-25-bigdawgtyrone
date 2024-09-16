@@ -35,6 +35,17 @@ class GuessNumber {
         {
             Console.WriteLine("you lost... as i expected.");
         }
+
+        if (guess > 20)
+        {
+            Console.WriteLine("You have to guess a number between 0 and 20. Your guess was above 20.");
+            numGuesses = numGuesses - 1;
+        }
+        else if (guess < 0)
+        {
+            Console.WriteLine("You have to guess a number between 0 and 20. Your guess was below 0.");
+            numGuesses = numGuesses - 1;
+        }
     }
 
         // Allow the user to guess the number.
