@@ -39,11 +39,13 @@ class GuessNumber {
         if (guess > 20)
         {
             Console.WriteLine("You have to guess a number between 0 and 20. Your guess was above 20.");
+            Console.WriteLine("You have been refunded a guess.\n");
             numGuesses = numGuesses - 1;
         }
         else if (guess < 0)
         {
             Console.WriteLine("You have to guess a number between 0 and 20. Your guess was below 0.");
+            Console.WriteLine("You have been refunded a guess.\n");
             numGuesses = numGuesses - 1;
         }
     }
