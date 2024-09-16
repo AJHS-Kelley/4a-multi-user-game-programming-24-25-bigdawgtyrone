@@ -1,3 +1,5 @@
+// Code checked, 100% 
+
 using System;
 class GuessNumber {
   static void Main() {
@@ -7,7 +9,7 @@ class GuessNumber {
     
     // Generate the secret number here.
     Random rnd = new Random(); // Create an object named 'rng' that is a copy of the Random() class.
-    int secretNumber = rnd.Next(1,21); // Generate from 0 to 99
+    int secretNumber = rnd.Next(1,21); // Generate from 0 to 20
     // Console.WriteLine(secretNumber);
     // int secretNumber = rnd.Next(25, 1000)
     while(numGuesses < maxGuesses) {
