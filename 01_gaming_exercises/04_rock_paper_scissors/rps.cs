@@ -8,7 +8,7 @@ int cpuScore = 0;
 string playerChoice = " ";
 string cpuChoice = " ";
 Random rnd = new Random();
-int cpuRand = rnd.Next(0, 2);
+int cpuRand = rnd.Next(1,3);
 
   Console.WriteLine("CPU: What is your name...? (Type a name then press Enter).\n");
   playerName = Console.ReadLine();
@@ -19,6 +19,7 @@ int cpuRand = rnd.Next(0, 2);
   if (gameChoice == "yes")
   {
     Console.WriteLine("CPU: Ok then... prepare yourself!");
+    Console.WriteLine("Would you like to choose rock, paper, or scissors? (Type one of these options then press enter).");
   }
   else if (gameChoice == "maybe")
   {
@@ -29,31 +30,26 @@ int cpuRand = rnd.Next(0, 2);
     Console.WriteLine("CPU: Thats what i thought... Come back when you'd like to take me on...");
   }
   
-  cpuChoice = Console.ReadLine().ToLower();
- 
+  playerChoice = Console.ReadLine().ToLower();
+
+
   if (cpuRand == 0)
   {
-    cpuChoice == "Rock";
+    cpuChoice = "rock";
   }
   else if (cpuRand == 1)
   {
-    cpuChoice == "Paper";
+    cpuChoice = "paper";
   }
   else if (cpuRand == 2)
   {
-    cpuChoice == "Scissors";
+    cpuChoice = "scissors";
   }
   else
   {
     Console.WriteLine("Something went wrong...");
   }
-
-  if (gameChoice == "yes")
-  {
-    Console.WriteLine("Would you like to choose rock, paper, or scissors? (Type one of these options then press enter).");
-  }
-
-  Console.ReadLine().ToLower();
+  
 
   if (playerChoice == "rock" && cpuChoice == "rock")
   {
@@ -107,14 +103,13 @@ int cpuRand = rnd.Next(0, 2);
     Console.WriteLine("A draw...");
   }
 
+
   while (cpuScore != 3 || playerScore != 3)
   {
     Console.WriteLine("Would you like to choose rock, paper, or scissors? (Type one of these options then press enter).");
   }
-
-
-
-  
+ 
+ 
 
   }
 }
