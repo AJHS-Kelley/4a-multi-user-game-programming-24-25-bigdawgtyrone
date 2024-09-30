@@ -2,30 +2,20 @@ using System;
 class HelloWorld {
   static void Main() {
     
-string playerName = "";
+int numDraws = 0;    
 int playerScore = 0;
 int cpuScore = 0;
 string playerChoice = " ";
 string cpuChoice = " ";
+int loopCount = 0;
+string loopReqs = "";
 Random rnd = new Random();
 int cpuRand = rnd.Next(1,3);
 
-  Console.WriteLine("CPU: What is your name...? (Type a name then press Enter).\n");
-  playerName = Console.ReadLine();
-  Console.WriteLine("CPU: so your " + playerName + " huh...");
 
-  while (playerScore < 5 && cpuScore < 5)
-  {
-    Console.WriteLine($"Your Score: {playerScore}\n CPU Score: {cpuScore}\n");
 
-    Console.WriteLine("Please Choose rock, paper, or scissors. Type your answer then press enter.\n");
-
-    playerChoice = Console.ReadLine().ToLower();
-    if (playerChoice != "rock" && playerChoice != "scissors" && playerChoice != "paper");
-    playerChoice = Console.ReadLine().ToLower(); 
-  }
   
-
+  playerChoice = Console.ReadLine().ToLower();
 
 
   if (cpuRand == 0)
@@ -50,6 +40,7 @@ int cpuRand = rnd.Next(1,3);
   {
     Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
     Console.WriteLine("A draw...");
+    numDraws++;
   }
   else if (playerChoice == "rock" && cpuChoice == "paper")
   {
@@ -73,6 +64,7 @@ int cpuRand = rnd.Next(1,3);
   {
     Console.WriteLine($"You chose {playerChoice} and the cpu chose {cpuChoice}.\n");
     Console.WriteLine("A draw...");
+    numDraws++;
   }
   else if (playerChoice == "paper" && cpuChoice == "scissor")
   {
@@ -96,15 +88,50 @@ int cpuRand = rnd.Next(1,3);
   {
     Console.WriteLine($"You chose {playerChoice} and the cpu chose {cpuChoice}.\n");
     Console.WriteLine("A draw...");
+    numDraws++;
   }
 
 
-  while (cpuScore != 3 || playerScore != 3)
+Console.Writeline("How many loops doy ou need?\nType an INTEGER then press ENTER.\n");
+loopReqs = Convert.ToInt32(Console.ReadLine());
+
+while (loopCount < loopReqs)
+
+if (playerRand == 0)
   {
-    Console.WriteLine("Would you like to choose rock, paper, or scissors? (Type one of these options then press enter).");
+    playerChoice = "rock";
   }
+  else if (playerRand == 1)
+  {
+    playerChoice = "paper";
+  }
+  else if (playerRand == 2)
+  {
+    playerChoice = "scissors";
+  }
+  else
+  {
+    Console.WriteLine("Something went wrong...");
+
+
+// while (playerScore <5 && cpuScore < 5);
+
+if (playerScore > cpuScore)
+{
+  Console.WriteLine("Wow you actually managed to win... now do it again...");
+}
+else
+{
+  Console.WriteLine("YOU LOSE!!");
+}
+
+
+
+
+
+  
  
  
 
   }
-}
+}}
