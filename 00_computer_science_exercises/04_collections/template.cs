@@ -58,7 +58,18 @@ class Collections {
 
   // Console.WriteLine("The elements of each array are:\n");
   // Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
-  // Console.WriteLine();
+  // Console.WriteLine(); Print an empty line to the screen.
+
+
+  // COMMON ERRORS WITH ARRAYS
+  // Console.WriteLine(breakfastFoods[99]); // Index Out of Bounds -- Accesing index that does not exist in the array.
+
+  // testScores[0] = "99"; // Error Message "Cannot implicitly convert convert dataType to dataType"
+  // Trying to put incorrect data type into the array.
+
+
+
+  
 
 
   } // DON'T DELETEEEEE (3 spaces)!!!!
