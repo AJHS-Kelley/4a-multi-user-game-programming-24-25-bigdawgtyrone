@@ -67,9 +67,22 @@ class Collections {
   // testScores[0] = "99"; // Error Message "Cannot implicitly convert convert dataType to dataType"
   // Trying to put incorrect data type into the array.
 
+  //  COMMON ARRAY METHODS -- Ways to work with the array data.
+  // Sorting an Array
+  int[] intArr = {32, 3, 84, 19, 20, 57, 33, 44, -6, -94};
+  string[] zooAnimals = {"t-rex", "penguin", "worm", "lion", "mosquito", "monkey", "lizard", "bear", "velociraptor", "alligator"};
 
+  Array.Sort(intArr);
+  Array.Sort(zooAnimals);
+  // Array.Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from LEAST TO GREATEST
+  Console.WriteLine("The elements of each array are:\n");
+  Console.WriteLine("zooAnimals: \n" + String.Join("\n", zooAnimals));
+  Console.WriteLine();
 
-  
+  //  Finding teh MIN, MAX, and SUM for numerical arrays.
+  Console.WriteLine("The MINIMUM value for intArr is: " + intArr.Min());
+  Console.WriteLine("The MAXIMUM value for intArr is: " + intArr.Max());
+  Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
 
 
   } // DON'T DELETEEEEE (3 spaces)!!!!
