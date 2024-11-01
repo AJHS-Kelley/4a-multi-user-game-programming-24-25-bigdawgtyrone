@@ -25,29 +25,40 @@ class Collections {
   double[] GPA = {1.8D, 2.4D, 6.3D, 3.8D, 0.000001};
 
   // Print Array Contents -- All Elements on Single Line
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
-  Console.WriteLine(); // Print an empty line to the screen.
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
+  // Console.WriteLine(); // Print an empty line to the screen.
 
-  // Print Array Elements on Seperate Lines
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("testScores: \n" + String.Join("\n", testScores));
-  Console.WriteLine(); 
+  // // Print Array Elements on Seperate Lines
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("testScores: \n" + String.Join("\n", testScores));
+  // Console.WriteLine(); 
 
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("GPA's: \n" + String.Join("\n", GPA));
-  Console.WriteLine(); 
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("GPA's: \n" + String.Join("\n", GPA));
+  // Console.WriteLine(); 
 
-  // How long is my array? DETERMINING ARRAY LENGTH
-  Console.WriteLine("The length of the breakfastFoods array is : " + breakfastFoods.Length);
-  // .length is known as a PROPERTY of the array.
+  // // How long is my array? DETERMINING ARRAY LENGTH
+  // Console.WriteLine("The length of the breakfastFoods array is : " + breakfastFoods.Length);
+  // // .length is known as a PROPERTY of the array.
 
-  // Accessing Elements in the array with the index.
-  Console.WriteLine("The first element in breakfastFoods is: " + breakfastFoods[0]);
-  // PRINT THE 2rd ELEMENT OF THE testScores array.
-  // PRINT THE 3rd ELEMENT OF THE GPA array.
+  // // Accessing Elements in the array with the index.
+  // Console.WriteLine("The first element in breakfastFoods is: " + breakfastFoods[0]);
+  // // PRINT THE 2rd ELEMENT OF THE testScores array.
+  // // PRINT THE 3rd ELEMENT OF THE GPA array.
 
+  // Shortcut to Acces Last Item in an Array
+  // Console.WriteLine("The last element of breakfastFoods is: " + breakfastFoods[breakfastFoods.Length - 1]);
+  // Console.WriteLine("The last element of testScores is: " + testScores[testScores.Length - 1]);
 
+  // CHANGING ELEMENTS IN THE ARRAY
+  // breakfastFoods[2] = "Super infinity nutrient";
+  // testScores[3] = 12;
+  // GPA[0] = 0.9D;
+
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
+  // Console.WriteLine();
 
 
   } // DON'T DELETEEEEE (3 spaces)!!!!
